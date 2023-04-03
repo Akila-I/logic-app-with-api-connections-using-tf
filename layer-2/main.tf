@@ -32,11 +32,11 @@ resource "azapi_resource" "logic_app_workflow" {
               "triggers": {
                   "When_a_feed_item_is_published": {
                       "recurrence": {
-                          "frequency": "Hour",
+                          "frequency": "Minute",
                           "interval": 1
                       },
                       "evaluatedRecurrence": {
-                          "frequency": "Hour",
+                          "frequency": "Minute",
                           "interval": 1
                       },
                       "splitOn": "@triggerBody()?['value']",
